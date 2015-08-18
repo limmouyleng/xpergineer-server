@@ -4,4 +4,9 @@ class Api::ArticlesController < ApplicationController
   def index
     render json: Article.all
   end
+
+  def show
+    @article = Article.find(params[:id])
+    render json: @article
+  end
 end
