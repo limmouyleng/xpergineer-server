@@ -1,7 +1,9 @@
 Rails.application.routes.draw do
 
   namespace :api do
+    resources :sections
     resources :articles
+
   end
 
   resources :articles

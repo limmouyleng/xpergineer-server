@@ -21,17 +21,17 @@
   </div>
  
   <div class="field form-group">
-    <%= f.label :text, class: 'col-sm-2 control-label' %>
+    <%= f.label :description, class: 'col-sm-2 control-label' %>
     <div class="col-sm-10">
-      <%= f.text_area :text, class: 'form-control' %>
+      <%= f.text_area :description, class: 'form-control', rows: '10'%>
     </div>
   </div>
 
   <div class="field form-group">
-    <%= f.label :type, class: 'col-sm-2 control-label' %>
+    <%= f.label :section, class: 'col-sm-2 control-label' %>
     <div class="col-sm-10">
-      <%= f.select :type, options_for_select([['Plumbing', 1], ['Fire Protection
-', 2], ['Electrical', 3], ['Architecture', 4], ['Civil Engineer', 5], ['Mechanical', 6]]) %>
+      <%= f.select :section, options_for_select([['Plumbing', 1], ['Fire Protection
+', 2], ['Electrical', 3], ['Architecture', 4], ['Civil Engineer', 5], ['Mechanical', 6], ['Computer Science', 7]]) %>
     </div>
   </div>
  
