@@ -7,6 +7,7 @@
     <th>Title</th>
     <th>Description</th>
     <th>Section</th>
+    <th>Photo</th>
     <th>Action</th>
   </tr>
  
@@ -15,6 +16,7 @@
       <td><%= article.title %></td>
       <td><%= article.description %></td>
       <td><%= article.section %></td>
+      <td><%= image_tag article.photo.url(:small) %></td>
       <td><%= link_to 'Show', article_path(article), class: 'btn btn-info' %>
       <%= link_to 'Edit', edit_article_path(article) , class: 'btn btn-primary' %>
       <%= link_to 'Destroy', article_path(article), class: 'btn btn-danger',

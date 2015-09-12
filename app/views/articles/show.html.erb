@@ -13,4 +13,9 @@
 	<%= @article.section %>
 </p>
 
+<p>
+  <strong>Photo: </strong>
+  <%= image_tag @article.photo.url(:small) %>
+</p>
+
 <%= link_to 'Article List', articles_path %>

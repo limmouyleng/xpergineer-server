@@ -34,6 +34,13 @@
 ', 2], ['Electrical', 3], ['Architecture', 4], ['Civil Engineer', 5], ['Mechanical', 6], ['Computer Science', 7]]) %>
     </div>
   </div>
+
+  <div class="field form-group">
+    <%= f.label :photo, class: 'col-sm-2 control-label' %>
+    <div class="col-sm-10">
+      <%= f.file_field :photo %>
+    </div>
+  </div>
  
    <div class="actions form-group">
     <div class="col-sm-offset-2 col-sm-10">
